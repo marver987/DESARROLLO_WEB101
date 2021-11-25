@@ -1,6 +1,6 @@
 /*
 =============================================================
-ESTILOS DE 
+ESTILOS DE MI APLICACION
 =============================================================
 */
 
@@ -14,6 +14,7 @@ p {
   color: #009;
   background-color: #ccc;
 }
+
 div {
   background-color: #bbb;
 }
@@ -21,6 +22,7 @@ div {
 #cabecera {
   background-color: green;
 }
+
 .articulo {
-  color: sienna;
+  color: #cc0;
 }
