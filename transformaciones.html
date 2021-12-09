@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones CSS</title>
+    <style>
+        body{
+            font-size: 2em;
+        }
+        .contenedor{
+            position: relative;
+        }
+        .caja{
+            width: 200px;
+            height: 200px;
+            line-height: 180px;     /*Interlineado*/
+            margin: 10px;
+        }
+        .caja1{
+            background-color: red;
+            transition: 2s linear;      /* la transicion tarda 2 segundos  */
+        }
+        .caja1:hover{                   /* hover: pseudoselector de estado*/
+            transform: scale(.5);       /* reduce en un  50% */
+        }
+        .caja2{
+            background-color: orange;
+            transition: 1s linear;
+        }
+        .caja2:hover{                   /* hover: pseudoselector de estado*/
+            transform: rotate(45deg);   /* gira 45° */
+        }
+        .caja3{
+            background-color: green;
+        }
+        .caja3:hover{                   /* hover: pseudoselector de estado*/
+            transform: translate(20%);  /*traslada la posicion en 20% */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1">
+            Escalado
+        </div>
+        <div class="caja caja2">
+            Rotado
+        </div>
+        <div class="caja caja3">
+            Translate
+        </div>
+    </div>
+</body>
+</html>

@@ -4,25 +4,49 @@ ESTILOS DE MI APLICACION
 =============================================================
 */
 
+/*
+Definicion de Fuentes de Texto
+*/
+@font-face {
+  font-family: "Ruso"; /*Ruso es cualquier nombre*/
+  src: url(../fonts/RussoOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Quick"; /*Quick es cualquier nombre*/
+  src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+/*
+Estilos con selectores de elemento
+*/
 body {
-  background-color: #ccc;
+  font-family: Quick;
+  font-size: 14px;
 }
+
 h2 {
-  color: #900;
-}
-p {
-  color: #009;
-  background-color: #ccc;
+  font-family: Ruso;
 }
 
-div {
-  background-color: #bbb;
+/* 
+Otros selectores
+*/
+div.form-login label {
+  display: block;
+  color: #fff;
 }
 
-#cabecera {
-  background-color: green;
+.form-login {
+  width: 50vw;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #333;
+  margin: 40px auto;
+  clear: both;
 }
 
-.articulo {
-  color: #cc0;
+div.form-login h2 {
+  color: #fff;
+  font-size: 2rem;
 }
