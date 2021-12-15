@@ -6,12 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro JavaScript</title>
     <script>
-        var nombre = window.prompt('Introduzca su nombre: ');
-        var edad = window.prompt('Introduzca la edad: ');
-        var saludo = 'Hola '+nombre+ ' tu edad es de: '+edad;
-        //alert(saludo);
-        console.log(saludo);
-        console.log('El saludo tiene una lingtud de : '+saludo.length);
+        // var nombre = window.prompt('Introduzca su nombre: ');
+        // var edad = window.prompt('Introduzca la edad: ');
+        // var saludo = 'Hola '+nombre+ ' tu edad es de: '+edad;
+        // //alert(saludo);
+        // console.log(saludo);
+        // console.log('El saludo tiene una lingtud de : '+saludo.length);
+
+        // REPASO DE OPERADORES
+        var x = 23;
+        var y = 12;
+        //operaciones aritmeticas
+        var z = x+y;    //suma  
+        var z = x - y;  //resta
+        var z = x*y;    //multiplicaion
+        var z = x**y;   // exponienciacion
+        var z = x/y;    //division
+        var z = x%y     // modulo
+        x++;             //incremento
+        y--;             //decremento
+        console.log('El resulatdo es: '+z);
+        console.log('El resulatdo de x es: ' + x);
+
+        /* ARRAYS */
+        //1ra forma
+        // var nombres = ['Juan', 'Gabriel', 'Hugo'];   
+
+        //2da forma
+        var nombres = [];                             
+        nombres[0] = 'Carlos';
+        nombres[1] = 'Fabio';
+        nombres[2] = 'Cimar';
+        nombres[3] = 'Jorge';
+        nombres[4] = 'Daniel';
+
+        //3ra forma
+        // var  nombres = new Array('Daniel', 'Pirulo');
+        // nombres[1] = 'Jorge';
+        // console.log(nombres);
+
+        // CONDICIONAL
+        if(x >= y){
+            console.log('x es mayor o igual');
+        }else{
+            console.log('y es mayor');
+        }
+        // ITERACION CON FOR
+        // for(i = 0; i< nombres.length; i++){
+        //     console.log(nombres[i]);
+        // }
+
+        // ITERACION CON WHILE
+        var i = 0;
+        while(i < nombres.length){
+            console.log(nombres[i]);
+            i++;
+        }
+
     </script>
 </head>
 <body>

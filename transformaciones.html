@@ -7,7 +7,7 @@
     <title>Transformaciones CSS</title>
     <style>
         body{
-            font-size: 2em;
+            /*font-size: 2em;*/
         }
         .contenedor{
             position: relative;
@@ -20,7 +20,9 @@
         }
         .caja1{
             background-color: red;
-            transition: 2s linear;      /* la transicion tarda 2 segundos  */
+            /*transition: 2s linear;      /* la transicion tarda 2 segundos  */
+            transition-duration: 4s;
+            transition-timing-function: linear;
         }
         .caja1:hover{                   /* hover: pseudoselector de estado*/
             transform: scale(.5);       /* reduce en un  50% */
@@ -38,9 +40,29 @@
         .caja3:hover{                   /* hover: pseudoselector de estado*/
             transform: translate(20%);  /*traslada la posicion en 20% */
         }
+
+        /*Ejemplo de animaciones*/
+        p{
+            animation-duration: 3s;
+            animation-name: slide;
+        }
+
+        @keyframes slide{
+            from{
+                margin-left: 100%;
+                width: 300%;
+            }
+            to{
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut est explicabo nostrum vitae? Iusto quaerat, deleniti minus eum excepturi rem consectetur veniam quo laboriosam enim ipsa dolor reprehenderit ratione eius?
+    </p>
     <div class="contenedor">
         <div class="caja caja1">
             Escalado
