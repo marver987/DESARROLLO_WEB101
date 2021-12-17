@@ -5,6 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro JavaScript</title>
+    
+</head>
+<body>
+    <h2>Ejemplos con Javascript</h2>
+
+    <input type="text" id="entrada">
+    <button id="mi_boton">Click aqui</button>
+
+
+    <!-- <h1 id="uno">
+        Titulo 1
+    </h1>
+    <h1 class="titulo">
+        Titulo 2
+    </h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos reprehenderit quis, a accusamus quo itaque
+        obcaecati cupiditate rerum tempora adipisci fugiat ab quam in laborum sunt voluptatibus perspiciatis animi.</h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos reprehenderit quis, a accusamus quo itaque
+        obcaecati cupiditate rerum tempora adipisci fugiat ab quam in laborum sunt voluptatibus perspiciatis animi.</h1>
+    <h1 class="titulo" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos reprehenderit quis, a accusamus quo itaque
+        obcaecati cupiditate rerum tempora adipisci fugiat ab quam in laborum sunt voluptatibus perspiciatis animi.</h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos reprehenderit quis, a accusamus quo itaque
+        obcaecati cupiditate rerum tempora adipisci fugiat ab quam in laborum sunt voluptatibus perspiciatis animi.</h1> -->
+
+
     <script>
         // var nombre = window.prompt('Introduzca su nombre: ');
         // var edad = window.prompt('Introduzca la edad: ');
@@ -14,31 +39,31 @@
         // console.log('El saludo tiene una lingtud de : '+saludo.length);
 
         // REPASO DE OPERADORES
-        var x = 23;
-        var y = 12;
+        // var x = 23;
+        // var y = 12;
         //operaciones aritmeticas
-        var z = x+y;    //suma  
-        var z = x - y;  //resta
-        var z = x*y;    //multiplicaion
-        var z = x**y;   // exponienciacion
-        var z = x/y;    //division
-        var z = x%y     // modulo
-        x++;             //incremento
-        y--;             //decremento
-        console.log('El resulatdo es: '+z);
-        console.log('El resulatdo de x es: ' + x);
+        // var z = x+y;    //suma  
+        // var z = x - y;  //resta
+        // var z = x*y;    //multiplicaion
+        // var z = x**y;   // exponienciacion
+        // var z = x/y;    //division
+        // var z = x%y     // modulo
+        // x++;             //incremento
+        // y--;             //decremento
+        // console.log('El resulatdo es: '+z);
+        // console.log('El resulatdo de x es: ' + x);
 
         /* ARRAYS */
         //1ra forma
         // var nombres = ['Juan', 'Gabriel', 'Hugo'];   
 
         //2da forma
-        var nombres = [];                             
-        nombres[0] = 'Carlos';
-        nombres[1] = 'Fabio';
-        nombres[2] = 'Cimar';
-        nombres[3] = 'Jorge';
-        nombres[4] = 'Daniel';
+        // var nombres = [];                             
+        // nombres[0] = 'Carlos';
+        // nombres[1] = 'Fabio';
+        // nombres[2] = 'Cimar';
+        // nombres[3] = 'Jorge';
+        // nombres[4] = 'Daniel';
 
         //3ra forma
         // var  nombres = new Array('Daniel', 'Pirulo');
@@ -46,26 +71,117 @@
         // console.log(nombres);
 
         // CONDICIONAL
-        if(x >= y){
-            console.log('x es mayor o igual');
-        }else{
-            console.log('y es mayor');
-        }
+        // if(x >= y){
+        //     console.log('x es mayor o igual');
+        // }else{
+        //     console.log('y es mayor');
+        // }
         // ITERACION CON FOR
         // for(i = 0; i< nombres.length; i++){
         //     console.log(nombres[i]);
         // }
 
         // ITERACION CON WHILE
-        var i = 0;
-        while(i < nombres.length){
-            console.log(nombres[i]);
-            i++;
-        }
+        // var i = 0;
+        // while(i < nombres.length){
+        //     console.log(nombres[i]);
+        //     i++;
+        // }
 
+        /*
+        FUNCIONES
+        */
+        // FUNCION CON NOMBRE
+        // function saludar(){
+        //     console.log('Hola mundo desde JavaScript');
+        // }
+        // saludar();
+
+        // // FUNCION ANONIMA
+        // var sumar = function(a, b){
+        //     var x = a+b;
+        //     console.log('El resultado es: '+x);
+        // }
+        // sumar(3, 4);
+
+        // // AMBITOS DE VARIABLES
+        // //UTILIZANDO VAR
+        // // var a = 'Esta es una A afuera'; //variable global
+        // // if(true){
+        // //     var a = 'Esta es una A adentro';    //variable local
+        // //     console.log(a);//esta adentro
+        // // }
+        // // console.log(a);//esta adentro
+
+        // // UTILIZANDO LET
+        // let a = 'Esta es una A afuera'; //variable global
+        // if (true) {
+        //     let a = 'Esta es una A adentro';    //variable local
+        //     console.log(a);//esta adentro
+        // }
+        // console.log(a);//esta afuera
+
+        // /*
+        // OBJETOS
+        // */
+        // var coche1 = new Object();
+        // coche1.color = "rojo";
+        // coche1.marca = "Toyota";
+        // coche1.arrancar = function(){
+        //     console.log('Arrancando el coche 1');
+        // }
+
+        // console.log(coche1.color);
+        // console.log(coche1.marca);
+        // coche1.arrancar();
+
+        // var coche2 = {
+        //     color : "verde",
+        //     marca : "Ford",
+        //     arrancar: function(){
+        //         console.log('Arrancar el coche 2');
+        //     }
+        // }
+
+        // console.log(coche2.color);
+        // console.log(coche2.marca);
+        // coche2.arrancar();
+
+        /*
+        DOM SCRIPTING 
+        SELECTORES EN JAVASCRIPT
+        */
+        // Por ID
+        // var x = document.getElementById('uno');
+        // x.innerHTML;
+        // console.log(x);
+        // // Por clase
+        // var y = document.getElementsByClassName('titulo');
+
+        // //iterando sobre el objeto o la coleccion de nodos (objetos) y
+        // for(var i = 0; i < y.length; i++){
+        //     console.log(y[i].innerHTML);
+        // }
+
+
+        // console.log(y);
+        // var z = document.getElementsByTagName('h1');
+        // console.log(z);
+
+        // var a = document.querySelector('#uno');
+        // console.log(a);
+        // var b = document.querySelectorAll('.titulo');
+        // console.log(b);
+
+        /*
+        EVENTOS EN JAVASCRIPT
+        */
+        document.getElementById('mi_boton').addEventListener('mouseover', function(){
+            //console.log('El usuario ha hecho un click');
+            let x = document.getElementById('entrada');
+            console.log(x.value);
+        });
     </script>
-</head>
-<body>
-    <h2>Ejemplos con Javascript</h2>
+
 </body>
 </html>
