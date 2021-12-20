@@ -1,9 +1,16 @@
 <?php
 require_once('../components/public_head.php');
 require_once('../components/public_top_menu.php');
+require_once('../modelos/proyectos.php');
 ?>
 
 <!-- INICIO PORTAFOLIO -->
+
+$proyecto = new Proyecto();
+$x = $proyecto->get_all();
+foreach($x as $items){
+tabla
+}
 
 <div class="item_portafolio cols_2_1">
     <div>
